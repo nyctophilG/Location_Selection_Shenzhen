@@ -50,3 +50,12 @@ def calculate_fitness(stations, demand_points):
     F_total = F_CO + F_Time + F_Limit # we add all cost to get to the fitness value
     
     return F_total # this is the number the whale algorithm will try to minimize
+
+
+# check for if its working or not
+mock_stations = np.random.rand(12, 2) 
+
+mock_demand_points = np.random.rand(160, 2)
+
+if __name__ == "__main__":
+    print(calculate_fitness(mock_stations, mock_demand_points))
